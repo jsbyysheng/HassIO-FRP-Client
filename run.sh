@@ -52,7 +52,7 @@ if [ ! -f /usr/src/frpc.ini ]; then
     fi
 
     echo "local_ip = 127.0.0.1 " >> /usr/src/frpc.ini
-    echo "local_port = ${HA_PORT}" >> /usr/src/frpc.ini
+    echo "local_port = 8123" >> /usr/src/frpc.ini
     echo "remote_port = ${HA_PORT}" >> /usr/src/frpc.ini
 
     echo "Creating frpc.ini done"
